@@ -1,59 +1,74 @@
 'use strict'
 
-function getBladeRunner(){
-    let bladeRunner = prompt('Are you a fan of the Blade Runner movies? Yes/No');
+function getMilitary(){
+    let military = prompt('Did I join the Army? Yes/No');
     
-    if (bladeRunner == 'Yes'){
-        alert('Welcome, Blade Runner.');
+    if (military == 'Yes'){
+        alert('Definity not.');
     }   else {
-        alert('You must be a Replicant.');
+        alert('That is correct. I actually joined the Marine Corps');
     }
-        console.log(bladeRunner.toLocaleLowerCase());
 }
 
-function getBaseline(){
-    let baseline = prompt('Do you remember your baseline? Yes/No');
+function getCountry(){
+    let country = prompt('Was I born in the United States? Yes/No');
 
-    if (baseline == "Yes"){
-        alert('Well done, you can pick up your bonus.');
+    if (country == "Yes"){
+        alert('I am a citizen, but I was not born here.');
     }   else {
-        alert('Remember: Cells, interlinked.')
+        alert('Right! I actually was born in Canada.');
     }
 }
 
-function getCBeams(){
-    let cBeams = prompt('Have you ever watched C-beams glitter in the dark near the Tannhauser gate? Yes/No')
+function getReporter(){
+    let reporter = prompt('Have I ever worked as a court reporter? Yes/No')
 
-    if (CBeams == "Yes"){
-        alert('All those moments will be lost in time, like tears in rain.');
-    }
-        else{
-        alert('I\'ve seen things you people wouldn\'t believe.')
+    if (reporter == "Yes"){
+        alert('I did! I worked as a court reporter for four years while I was in the military.');
+    }  else{
+        alert('I actually did! I am not anymore, but you are close.');
     }
 }
 
-function get(){
-    let bladeRunner = prompt('Are you a fan of the Blade Runner movies? Yes/No');
+function getDog(){
+    let dog = prompt('Do I own a dog? Yes/No');
     
-    if (bladeRunner == 'Yes'){
-        alert('Welcome, Blade Runner.');
+    if (dog == 'Yes'){
+        alert('I do! I have a Jackhuahua who is my best, tiny friend.');
     }   else {
-        alert('You must be a Replicant.');
+        alert('Wrong. I would have a sad life if I did not');
     }
 }
 
-function get(){
-    let bladeRunner = prompt('Are you a fan of the Blade Runner movies? Yes/No');
+function getMarried(){
+    let married = prompt('Am I married? Yes/No');
     
-    if (bladeRunner == 'Yes'){
-        alert('Welcome, Blade Runner.');
+    if (married == 'Yes'){
+        alert('Correct! I proposed to my wife after just two months and we were married in under five.');
     }   else {
-        alert('You must be a Replicant.');
+        alert('Wrong, but I did not think I would ever be either.');
     }
 }
 
-getBladeRunner()
+function getUserName(){
+    let userName = prompt('What is your name?: ');
+    
+    if (userName == 'Joel'){
+    alert('You must work for Tyrell');
+    } else {
+    alert('Hey! Welcome to my page! ' +  userName);
+    }
+}
 
-getBaseline()
+getMilitary()
 
-getCBeams()
+getCountry()
+
+getReporter()
+
+getDog()
+
+getMarried()
+
+getUserName()
+
