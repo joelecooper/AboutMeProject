@@ -1,0 +1,26 @@
+head {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 300px;
+}
+
+body {
+    background-color: salmon;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(26, 48, 241);
+    color:rgb(255, 255, 255);
+    text-size-adjust: large;
+    border: rgb(20, 51, 228);
+    border-style: solid;
+    font-size: 100px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 25px;
+
+}
