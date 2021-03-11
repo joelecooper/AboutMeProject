@@ -72,3 +72,28 @@ getMarried()
 
 getUserName()
 
+function guessingGame(){
+
+let correctAnswer = ('3');
+console.log(correctAnswer);
+
+let guesses = 4
+
+for(let i = 0; i < guesses; i++){
+    let userAnswer = prompt('How many siblings do I have?');
+    while (userAnswer < 1 || userAnswer > 4){
+        userAnswer = prompt('Wow maybe not that much. Try again.')
+    }
+    if (userAnswer == correctAnswer){
+        alert('That is right!.');
+        break;
+    } else if (userAnswer > correctAnswer){
+        alert('That is a lot of siblings! Try a little less.')
+    } else if (userAnswer < correctAnswer){
+        alert('I wish, unfortunately I have more. Just kidding I love my siblings.')
+    }
+}
+}
+
+guessingGame()
+
