@@ -1,52 +1,60 @@
 'use strict'
+function affirmative(){
+    alert('That is Correct')
+}
+
+function negative(){
+    alert('That is Incorrect')
+}
 
 function getMilitary(){
     let military = prompt('Did I join the Army? Yes/No');
-    
-    if (military == 'Yes'){
-        alert('Definity not.');
+
+    if (military == 'Yes' || 'yes'){
+        negative();
     }   else {
-        alert('That is correct. I actually joined the Marine Corps');
+        affirmative();
     }
 }
+
 
 function getCountry(){
     let country = prompt('Was I born in the United States? Yes/No');
 
-    if (country == "Yes"){
-        alert('I am a citizen, but I was not born here.');
+    if (country == "Yes" || 'yes'){
+        negative();
     }   else {
-        alert('Right! I actually was born in Canada.');
+        affirmative();
     }
 }
 
 function getReporter(){
     let reporter = prompt('Have I ever worked as a court reporter? Yes/No')
 
-    if (reporter == "Yes"){
-        alert('I did! I worked as a court reporter for four years while I was in the military.');
+    if (reporter == "Yes" || 'yes'){
+       affirmative();
     }  else{
-        alert('I actually did! I am not anymore, but you are close.');
+        negative();
     }
 }
 
 function getDog(){
     let dog = prompt('Do I own a dog? Yes/No');
     
-    if (dog == 'Yes'){
-        alert('I do! I have a Jackhuahua who is my best, tiny friend.');
+    if (dog == "Yes" || 'yes'){
+        affirmative();
     }   else {
-        alert('Wrong. I would have a sad life if I did not');
+        negative();
     }
 }
 
 function getMarried(){
     let married = prompt('Am I married? Yes/No');
     
-    if (married == 'Yes'){
-        alert('Correct! I proposed to my wife after just two months and we were married in under five.');
+    if (married == "Yes" || 'yes'){
+        affirmative();
     }   else {
-        alert('Wrong, but I did not think I would ever be either.');
+       negative();
     }
 }
 
@@ -96,4 +104,3 @@ for(let i = 0; i < guesses; i++){
 }
 
 guessingGame()
-
